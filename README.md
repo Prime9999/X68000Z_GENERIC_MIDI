@@ -5,7 +5,7 @@ Simple MIDI adapter implementation which converts X68000Z UART-MIDI to generic M
 * X68000Z
 * X68000Z UART cable
 * ESP32 development board (ex. ESP32-DevKitC)
-* [necobit MIDI UNIT FOR GROVE](https://necobit.com/denshi/grove-midi-unit/)
+* [necobit MIDI UNIT FOR GROVE](https://necobit.com/denshi/grove-midi-unit/) or [Kinoshita Lab MIDI-UART interface-san Kit](https://github.com/kinoshita-lab/MIDI-UART-interface-san)
 * [Grove - 4 pin Female Jumper to Grove 4 pin Conversion Cable](https://www.seeedstudio.com/Grove-4-pin-Female-Jumper-to-Grove-4-pin-Conversion-Cable-5-PCs-per-PAck.html)
 * MIDI interface cable
 * MIDI sound Module (ex. Roland MT-32)
@@ -24,7 +24,16 @@ Simple MIDI adapter implementation which converts X68000Z UART-MIDI to generic M
 |RED(VIN)|3V3|
 |BLACK(GND)|GND|
 
-Note: necobit MIDI UNIT FOR GROVE JP1 must be shorted.
+|Kinoshita Lab MIDI-UART interface-san Kit|ESP32 development board|
+|:-:|:-:|
+|V+|3V3|
+|In|IO18|
+|Out|IO19|
+|GND|GND|
+
+### Note:
+* necobit MIDI UNIT FOR GROVE: JP1 must be shorted.
+* Kinoshita Lab MIDI-UART interface-san Kit: Bottom two pins of J3 and J4 must be shorted.
 
 ## How to use
 1. Open Arduino IDE
